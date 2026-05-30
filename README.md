@@ -52,7 +52,7 @@ A scalable and maintainable Selenium Automation Framework built using:
 
 
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/souravsahu3490/selenium-cucumber-framework-saucedemo.git
 
 
 
