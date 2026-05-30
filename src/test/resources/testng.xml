@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Cucumber TestNG Suite" verbose="2" thread-count="3" parallel="tests">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Run tests with tag -->
+    <parameter name="cucumber.filter.tags" value="@RegressionTest"/>
+
+    <test name="Regression Tests">
+        <classes>
+            <class name="com.sourav.automation.runners.TestRunner"/>
+        </classes>
+    </test>
+</suite>

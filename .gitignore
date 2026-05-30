@@ -1,0 +1,52 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Screenshots
+screenshots/
+
+# Allure
+allure-results/
+allure-report/
+.allure/
+
+# Extent Reports
+extent-report/
+ExtentReport.html
+
+# Cucumber Reports
+cucumber-report.html
+cucumber.json
+
+# TestNG Reports
+test-output/
+surefire-reports/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# Java
+*.class
+
+# Maven Wrapper JAR (optional)
+!.mvn/wrapper/maven-wrapper.jar
