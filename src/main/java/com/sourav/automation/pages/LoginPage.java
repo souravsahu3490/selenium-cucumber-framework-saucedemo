@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "login-button")
     private WebElement loginButton;
 
-    @FindBy(css = ".error-message-container h3")
+    @FindBy(css = ".error-message-container h300")
     private WebElement errorMessage;
 
     // Constructor
