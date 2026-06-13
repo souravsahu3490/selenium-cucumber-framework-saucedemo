@@ -57,9 +57,13 @@ jobs:
           name: Extent-Report
           path: target/extent-report
 
-      - name: Upload Allure Results
+      - name: Upload Automation Artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Allure-Results
-          path: target/allure-results
+          name: Selenium-Automation-Artifacts
+          path: |
+            **/*.html
+            **/*.png
+            **/*.log
+          if-no-files-found: warn
