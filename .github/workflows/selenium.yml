@@ -63,6 +63,7 @@ jobs:
         with:
           name: Selenium-Automation-Artifacts
           path: |
+            target/
             **/*.html
             **/*.png
             **/*.log
