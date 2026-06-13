@@ -52,7 +52,7 @@ A scalable and maintainable Selenium Automation Framework built using:
 
 
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/souravsahu3490/selenium-cucumber-framework-saucedemo.git
 
 
 
@@ -60,7 +60,7 @@ git clone https://github.com/your-username/your-repo-name.git
 
 
 
-cd your-repo-name
+cd selenium-cucumber-framework-saucedemo
 
 
 
@@ -132,8 +132,11 @@ Framework generates:
 
 
 /target/cucumber-report.html
+
 /target/extent-report/ExtentReport.html
+
 /target/site/allure-maven-plugin/index.html
+
 ---
 
 
