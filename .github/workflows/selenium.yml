@@ -41,7 +41,7 @@ jobs:
         run: mvn -version
 
       - name: Execute Tests
-        run: mvn clean
+        run: mvn clean test
 
       - name: Upload Cucumber Report
         if: always()
