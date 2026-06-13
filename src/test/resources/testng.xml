@@ -7,7 +7,7 @@
     </listeners>
 
     <!-- Run tests with tag -->
-    <parameter name="cucumber.filter.tags" value="@RegressionTest"/>
+    <parameter name="cucumber.filter.tags" value="@Login"/>
 
     <test name="Regression Tests">
         <classes>
