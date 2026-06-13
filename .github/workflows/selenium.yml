@@ -41,7 +41,18 @@ jobs:
         run: mvn -version
 
       - name: Execute Tests
-        run: mvn clean test
+        run: mvn clean
+
+      - name: Generate Allure Report
+        if: always()
+        run: mvn allure:report
+
+      - name: Upload Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Allure-Report
+          path: target/site/allure-maven-plugin
 
       - name: Upload Cucumber Report
         if: always()
@@ -62,9 +73,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Selenium-Automation-Artifacts
-          path: |
+          path:
             target/
-            **/*.html
             **/*.png
             **/*.log
           if-no-files-found: warn
