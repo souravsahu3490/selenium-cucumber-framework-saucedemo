@@ -71,10 +71,3 @@ jobs:
             **/*.png
             **/*.log
           if-no-files-found: warn
-
-      - name: Upload Allure Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: Allure-Report
-          path: target/site/allure-maven-plugin
