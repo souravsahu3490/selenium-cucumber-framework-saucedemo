@@ -45,17 +45,7 @@ jobs:
 
       - name: Generate Allure Report
         if: always()
-        run: mvn allure:report
-
-      - name: Generate Allure HTML Report
-        run: |
-          allure generate target/allure-results --clean -o allure-report
-
-      - name: Upload Allure HTML Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: Allure-Report
-          path: allure-report
+        run: mvn allure:serve
 
       - name: Upload Cucumber Report
         if: always()
