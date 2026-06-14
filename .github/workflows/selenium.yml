@@ -47,10 +47,6 @@ jobs:
         if: always()
         run: mvn allure:report
 
-      - name: Install Allure
-        run: |
-          choco install allure-commandline -y
-
       - name: Generate Allure HTML Report
         run: |
           allure generate target/allure-results --clean -o allure-report
