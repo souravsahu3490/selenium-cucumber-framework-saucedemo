@@ -76,6 +76,6 @@ jobs:
         with:
           name: Logs & Screenshots
           path: |
-            **/*.png
-            **/*.log
+            screenshots/
+            logs/
           if-no-files-found: warn
