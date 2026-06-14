@@ -67,6 +67,7 @@ jobs:
         with:
           name: Cucumber-Report
           path: target/cucumber-report.html
+          if-no-files-found: warn
 
       - name: Upload Extent Report
         if: always()
@@ -74,6 +75,7 @@ jobs:
         with:
           name: Extent-Report
           path: target/extent-report
+          if-no-files-found: warn
 
       - name: Upload Automation Artifacts
         if: always()
