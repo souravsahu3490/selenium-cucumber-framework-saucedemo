@@ -53,7 +53,7 @@ public class login {
     public void userShouldBeLoggedInSuccessfully() {
         LoggerUtils.info("Verifying successful login");
         String currentUrl = driver.getCurrentUrl();
-        Assert.assertTrue(currentUrl.contains("inventory___"),
+        Assert.assertTrue(currentUrl.contains("inventory"),
                 "Failed: User was not redirected to inventory page");
         LoggerUtils.info("User logged in successfully");
     }

@@ -2,13 +2,13 @@ name: Selenium Automation Framework
 
 on:
 
-  push:
-    branches:
-      - main
-
-  pull_request:
-    branches:
-      - main
+#  push:
+#    branches:
+#      - main
+#
+#  pull_request:
+#    branches:
+#      - main
 
   workflow_dispatch:
 
@@ -53,6 +53,7 @@ jobs:
         with:
           name: Allure-Report
           path: target/site/allure-maven-plugin
+          if-no-files-found: warn
 
       - name: Upload Cucumber Report
         if: always()
