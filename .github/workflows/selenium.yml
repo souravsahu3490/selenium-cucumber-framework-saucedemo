@@ -45,7 +45,7 @@ jobs:
 
       - name: Generate Allure Report
         if: always()
-        run: mvn allure:serve
+        run: mvn allure:report
 
       - name: Upload Cucumber Report
         if: always()
