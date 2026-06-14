@@ -4,7 +4,7 @@ Feature: User Login Functionality
   Background:
     Given User is on the login page
 
-  @SmokeTest @Positiveee
+  @SmokeTest @Positive
   Scenario: Successful login with valid credentials
     When User enters username "standard_user"
     And User enters password "secret_sauce"
