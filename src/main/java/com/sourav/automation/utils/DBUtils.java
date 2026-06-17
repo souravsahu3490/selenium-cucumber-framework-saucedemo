@@ -5,9 +5,9 @@ import java.util.*;
 
 public class DBUtils {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/automationdb";
-    private static final String USER = "root";
-    private static final String PASSWORD = "root";
+    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=AutomationDB;encrypt=true;trustServerCertificate=true";
+    private static final String USER = "sa";
+    private static final String PASSWORD = "Pass@123";
 
     public static List<Map<String, String>> executeQuery(String query) {
 

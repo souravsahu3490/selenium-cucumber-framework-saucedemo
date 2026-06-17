@@ -23,12 +23,12 @@ public class loginDBAllRows {
 
     @Given("User logs in with DB table all rows")
     public void userLogsInWithDBTableAllData() throws InterruptedException {
-        String query = "SELECT username, password FROM logindata";
+        String query = "SELECT Username,Password FROM LoginData";
         List<Map<String, String>> testData = DBUtils.executeQuery(query);
 
         for (Map<String, String> row : testData) {
-            String username = row.get("username");
-            String password = row.get("password");
+            String username = row.get("Username");
+            String password = row.get("Password");
             System.out.println(username + " : " + password);
 
             // Perform login

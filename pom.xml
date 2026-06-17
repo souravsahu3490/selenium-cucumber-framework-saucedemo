@@ -23,7 +23,8 @@
         <log4j.version>2.26.0</log4j.version>
         <extentreports.version>5.1.2</extentreports.version>
         <extentreports-cucumber.version>1.14.0</extentreports-cucumber.version>
-        <apachepoi.version>5.2.5</apachepoi.version>
+        <apachepoi.version>5.5.1</apachepoi.version>
+        <mssqljdbc.version>13.4.0.jre11</mssqljdbc.version>
     </properties>
 
     <dependencies>
@@ -116,6 +117,12 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${apachepoi.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>${mssqljdbc.version}</version>
         </dependency>
 
     </dependencies>
